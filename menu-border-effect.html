@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu border effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rgb(66, 65, 58);
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li a{
+            color: yellow;
+            padding: 8px 15px;
+            margin: 10px;
+            text-decoration: none;
+            position: relative;
+        }
+        ul li a::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 0.3s;
+            transform-origin: left;
+            box-sizing: border-box;
+            top: 0;
+            left: 0;
+            border-top: 2px solid yellow;
+            border-left: 2px solid yellow;
+
+        }
+        ul li a::after{
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all 0.3s;
+            transform-origin: left;
+            box-sizing: border-box;
+            bottom: 0;
+            right: 0;
+            border-bottom: 2px solid yellow;
+            border-right: 2px solid yellow;
+
+        }
+        ul li a:hover:after,
+        ul li a:hover:before{
+            width: 10%;
+            height: 20%;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

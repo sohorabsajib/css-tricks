@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selection selctor</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ::selection{
+            color: yellow;
+            background-color: rgb(105, 131, 65);
+        }
+        h1::selection {
+            color: red;
+            background-color: rgb(169, 180, 153);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>this is heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi cum ea eum quod sed? Ab nemo voluptatibus fugit corporis labore. Recusandae, optio ea exercitationem quasi blanditiis nesciunt. Aliquam, fugiat necessitatibus.</p>
+    </div>
+</body>
+</html>

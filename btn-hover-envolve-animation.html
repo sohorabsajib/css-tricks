@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>btn hover envolve animation hover</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: #acd2fb;
+        }
+        a{
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: royalblue;
+            padding: 10px 15px;
+            color: white;
+            position: relative;
+        }
+        a::before{
+            content: "learn with sajib";
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: red;
+            color: white;
+            transform: rotateX(270deg);
+            transform-origin: top;
+            transition:all 0.5s;
+            transition-delay: 0.3s;
+            
+        }
+        a:hover::before{
+            transform: rotateX(0deg);
+        }
+        a::after{
+            content: "learn with sajib";
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            padding: 10px 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: green;
+            
+            color: white;
+            transform: rotateX(270deg);
+            transform-origin: bottom;
+            transition:all 0.5s;
+            transition-delay: 0.8s;
+            
+        }
+        a:hover::after{
+            transform: rotateX(0deg);
+        }
+       
+        
+    </style>
+</head>
+<body>
+    <a href="#" target="_blank">Learn with sajib</a>
+</body>
+</html>

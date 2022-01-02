@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root{
+            --clr:red;
+            --bcgclr: black;
+        }
+        div{
+            background-color: var(--bcgclr);
+        }
+        h1{
+            color: var(--clr);
+        }
+        h2{
+            color: yellow;
+        }
+        h3{
+            color: var(--clr);
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1>this is h1</h1>
+    </div>
+    <div>
+        <h2>this is h2</h2>
+    </div>
+    <div>
+        <h3>this is h3</h3>
+    </div>
+</body>
+</html>

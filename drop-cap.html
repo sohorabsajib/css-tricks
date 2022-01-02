@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drop cap</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: 'Grenze Gotisch', cursive; */
+        }
+        .main-div{
+            width: 100vw;
+            height: 100vh;
+            background-color: #3098db;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 50px;
+        }
+        .center-div{
+            width: 70vw;
+            font-size: 1.5rem;
+            color: white;
+            line-height: 30px;
+            font-weight: lighter;
+        }
+        p.first-child::first-letter{
+            color: crimson;
+            font-size: 8rem;
+            float: left;
+            display: block;
+            margin: 0 15px 0 0;
+            line-height: 0.5;
+            font-weight: bold;
+        }
+        p.first-child::first-line{
+            color: crimson;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <div class="center-div">
+            <p class="first-child">
+                vorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat quas nihil animi quae fugiat, autem quia tenetur saepe excepturi sit rem minima mollitia repellat aliquid officia odit fuga perferendis voluptatem.
+            </p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nisi consequatur quisquam quia, perspiciatis magnam, maxime quibusdam aut dolorum delectus officia laudantium nobis harum cupiditate animi quasi inventore beatae praesentium.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam nisi consequatur quisquam quia, perspiciatis magnam, maxime quibusdam aut dolorum delectus officia laudantium nobis harum cupiditate animi quasi inventore beatae praesentium.</p>
+        
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img card hover effect</title>
+    <style>
+        
+        body{
+         
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #7f9ead;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px  rgb(0, 0, 0, 0.5);
+            transition: 0.3s;
+            padding: 30px 50px;
+            background: white;
+            cursor: pointer;
+        }
+        .card:hover{
+            height: 300px;
+            
+        }
+        .imgbox{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-80px);
+            z-index: 99;
+        }
+        img{
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 20px  rgb(0, 0, 0, 0.5);
+
+        }
+        .content{
+            padding: 10px 20px;
+            text-align: center;
+            transform: translateY(-450px);
+            opacity: 0;
+            transition: 0.3s;
+            
+        }
+        .content h2{
+            color: #7f9ead;
+        }
+        .card:hover>.content{
+            opacity: 1;
+            transform: translateY(-180px);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="imgbox">
+            <img src="happy-kids-1.jpg" alt="">
+        </div>
+        <div class="content">
+            <h2>keep smileing</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam adipisci maxime ipsa illum qui vitae quaerat ab accusamus aliquam ratione fugit, modi nesciunt cum quam, blanditiis in enim molestias? Alias!
+            </p>
+        </div>
+    </div>
+</body>
+</html>
